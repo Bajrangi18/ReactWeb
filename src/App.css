@@ -1,17 +1,33 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(90deg, rgb(30, 30, 30), rgb(49, 47, 47), rgb(30, 30, 30));
+  overflow: hidden;
+  margin: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+#logoID {
+   transition: 200ms;
+   transform: scale(1);
+   /* filter: drop-shadow(0 0 0.1rem white); */
+   animation: heartBeat 2s ease-in-out infinite alternate;
+
+}
+@keyframes heartBeat {
+  from {
+    filter: drop-shadow(0 0 0.1rem white);
+    transform: scale(1);
+  }
+
+  to {
+    filter: drop-shadow(0 0 0.7rem white);
+    transform: scale(1.1);
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;
