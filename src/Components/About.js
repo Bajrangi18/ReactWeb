@@ -3,7 +3,6 @@ import {useState,} from 'react'
 import { initializeApp } from 'firebase/app'
 import {  getDatabase, ref, set} from 'firebase/database'
 import { getStorage,uploadBytes,ref as sRef } from "firebase/storage";
-
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
 
@@ -22,7 +21,9 @@ function About() {
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
   const storage = getStorage(app);
-
+  const [imageUpload, setImageUpload] = useState(null);
+  const [imageUploadOne, setImageUploadOne] = useState(null);
+ 
 
   const [show, setShow] = useState(false);
 
@@ -37,7 +38,7 @@ function About() {
       const collegeName = document.getElementById("collegeName").value
       const state = document.getElementById("state").value
       const city = document.getElementById("city").value
-      const remName = document.getElementById("amount").value
+      const remName = document.getElementById("remName").value
       const amount = document.getElementById("amount").value
       const transID = document.getElementById("transID").value
       const eventName = document.getElementById("optionsDown").value
@@ -47,14 +48,16 @@ function About() {
         && city!=undefined && remName!=undefined && amount!=undefined && transID!=undefined && eventName!="SELECT EVENT" && email!=undefined && file!="" && filesName!="" ){
                 
       const spacePath =  (eventName+name[0]+name[1]+name[2]+phone[0]+phone[2]+phone[4]+phone[6]+phone[8]+(Math.floor(Math.random() * 10))+(Math.floor(Math.random() * 10))+(Math.floor(Math.random() * 10))) 
-      const storageRef = sRef(storage,"Screenshots/"+spacePath+".jpg");
+      // const storageRef = sRef(storage,`Screenshots/${imageUpload.name + v4()}`);
+      const storageRef = sRef(storage,`Screenshots/`+spacePath);
 
-      uploadBytes(storageRef, file).then((snapshot) => {
+
+      uploadBytes(storageRef, imageUpload).then((snapshot) => {
         console.log('Uploaded a blob or file!');
       });
 
-      const storageIDRef = sRef(storage,"StudentID/"+spacePath+".jpg");
-      uploadBytes(storageIDRef, filesName).then((snapshot) => {
+      const storageIDRef = sRef(storage,"StudentID/"+spacePath);
+      uploadBytes(storageIDRef, imageUploadOne).then((snapshot) => {
         const pElement = document.createElement('h6')
         pElement.innerHTML = "Docs Uploaded Successfully! Here is your RegID";
         pElement.style.color = "black"
@@ -83,7 +86,6 @@ function About() {
         isIEEE: ieee,
       });   
       document.getElementById("subDis").disabled = true;
-      setTimeout(() => {window.location.reload();},20000)
       }else{
         alert("Some of the Inputs are Blank!")
       }
@@ -167,12 +169,16 @@ function About() {
                 <option value="DRFS">LIFT-OFF</option>
               </Form.Select><br></br>
               <div className="input-group mb-3">
-                  <input type="file" className="form-control" placeholder="Integers Only" aria-label="Recipient's username" aria-describedby="basic-addon2" id="fileName"/>
+                  <input onChange={(event)=> {
+                    setImageUpload(event.target.files[0])
+                  }}type="file" className="form-control" placeholder="Integers Only" aria-label="Recipient's username" aria-describedby="basic-addon2" id="fileName"/>
                   <span className="input-group-text" id="basic-addon2">SCREENSHOT</span>
                 </div>
                 
               <div className="input-group mb-3">
-                  <input type="file"  className="form-control" placeholder="Integers Only" aria-label="Recipient's username" aria-describedby="basic-addon2" id="fileSName"/>
+                  <input  onChange={(event)=> {
+                    setImageUploadOne(event.target.files[0])
+                  }} type="file"  className="form-control" placeholder="Integers Only" aria-label="Recipient's username" aria-describedby="basic-addon2" id="fileSName"/>
                   <span className="input-group-text" id="basic-addon2">STUDENT ID</span>
                 </div>
               <br></br><center>
@@ -184,12 +190,13 @@ function About() {
                 </Offcanvas>
                 <div className="row">
                     <div className="col-12 col-lg-5 " style={{"alignItems":"center","justifyContent":"center"}}><br></br><br></br><br></br>
-                    <img src={logoBG} height={240} style={{"objectFit":"contain"}} id="logoID"/>
+                    <img src={logoBG} height={240} style={{"objectFit":"contain"}} id="logoID"/><br></br><br></br>
+                    <h1 style={{"color": "white","fontFamily": "'Source Code Pro', monospace","fontSize": "2rem"}}><br></br>First<br></br>Techno-Management<br></br>Fest<br></br>In NHCE</h1>
                     </div>
                     <div className="col-12 col-lg-7" style={{"padding": "4%", "color": "white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.1rem"}}>
-                     <p>{`New Horizon College of Engineering, Bangalore presents QuantumX-22, a 3-day tech fest and the first one to ever be hosted in the NHCE campus, from 8th-10th December. Over the duration of three days, the fest offers students from all around Bangalore a series of events, from a 24 hour hackathon to a drone race, from hacker series to robo wars. Along with those, a bunch of workshops and guest talks awaits the minds eager to gain knowledge.`}
+                     <p id="typeW">{`New Horizon College of Engineering, Bangalore presents QuantumX-22, a 3-day tech fest and the first one to ever be hosted in the NHCE campus, from 8th-10th December. Over the duration of three days, the fest offers students from all around Bangalore a series of events, from a 24 hour hackathon to a drone race, from hacker series to robo wars. Along with those, a bunch of workshops and guest talks awaits the minds eager to gain knowledge.`}
                      </p><br></br>
-                     <button type="button" className="btn btn-light btn-lg" onClick={handleShow} 
+                     <button type="button" className="btn btn-light btn-lg" onClick={handleShow} id="bookPass"
                      style={{"margin":"10%","width":"80%","height":"20%","fontFamily": "'Source Code Pro', monospace","fontSize": "2.2rem","fontWeight":"700","filter": "drop-shadow(0 0 0.3rem white)"}}>BOOK PASSES NOW!</button>
                     </div>
                 </div>

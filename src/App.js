@@ -21,9 +21,21 @@ function App() {
         <Team /><br></br>
         <Sponsors id="sponsors" /><br></br>
         <Faq/><br></br>
+        {/* <MainView id="MainView"/> */}
     </div>
   );
 }
 
-
+// const MainView = () => {
+//   return (
+//     <div>
+//         <About /><br></br>
+//         <Timer/><br></br>
+//         <Events/><br></br>
+//         <Team /><br></br>
+//         <Sponsors id="sponsors" /><br></br>
+//         <Faq/><br></br>
+//     </div>
+//   );
+// }
 export default App;

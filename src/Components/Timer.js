@@ -49,16 +49,16 @@ const Timer = () => {
                             </div>
                     </div>
                     <div className="row" style={{"fontSize":"7vw","fontWeight":"700","fontFamily": "'Source Code Pro', monospace"}}>
-                            <div className="col-3">
+                            <div className="col-3" id="daysCol">
                             {isDays}
                             </div>
-                            <div className="col-3">
+                            <div className="col-3" id="hoursCol">
                             {isHours}
                             </div>
-                            <div className="col-3">
+                            <div className="col-3" id="minsCol">
                             {isMins}
                             </div>
-                            <div className="col-3">
+                            <div className="col-3" id="secondsCol">
                             {isSecs}
                             </div>
                     </div>
