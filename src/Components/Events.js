@@ -11,7 +11,7 @@ import rocket from "./Helpers/rocket.jpg"
 import fast from "./Helpers/fsv.jpg"
 import cur from "./Helpers/cur.jpg"
 import rbs from "./Helpers/RBS.jpg"
-import rbw from "./Helpers/RBW.jpg"
+import fwg from "./Helpers/FWG.jpeg"
 import qhck from "./Helpers/hack.jpg"
 import canw from "./Helpers/can.jpg"
 import bmm from "./Helpers/bmm.jpg"
@@ -33,7 +33,7 @@ const urlContent = {
     "CUR": cur,
     "HCKS": comp,
     "RBS": rbs,
-    "RBW": rbw,
+    "FWG": fwg,
     "QHCK": qhck,
     "CANW": canw ,
     "CPCT": cpct,
@@ -56,8 +56,8 @@ const content = {
     "CBD": "A workshop targetted towards implementation of Deep Learning technology to develop a Chatbot. Strictly Hands-On!",
     "CUR": "An event curated for the young budding entrepreneurs and their ideas where you can showcase the next unicorn of India!",
     "HCKS": "A Competitive Coding Event for the BraveHearts who wish to be the best among the best. You leave the rest, to be the best!",
-    "RBS": "A redifinition of Soccer where the GOAT is a BOT! Siuu for the Number 7 as Robo Soccer boasts a Proper Stadium and Audience",
-    "RBW": "A workshop for the geeks inspired by robotics and its subsystems, complete hands on session by the best in Indsutry!",
+    "RBS": "A redifinition of Soccer where the GOAT is a BOT! Siuu for the Number 7 as Robo Football boasts a Proper Stadium and Audience",
+    "FWG": "A workshop designed specifically for the ones who know that the limit is the sky! Trained professionals from a reputed aerospace startup will help you develop an RC Plane from scratch and fly it as well!",
     "QHCK": "A 24-Hour Hackathon designed specifically to boost your Adrenaline drive with our very special Company specific tracks in Quantum Hours",
     "CANW": "A workshop designed to enlighten the minds of space enthusiasts with the development of a mini satellite. Compete against each other through a drop test!",
     "CPCT": "A Deep insight into the minds of Industry Experts and Startup Founders on topics that relate to each and every one of us, A charcha amongst the best for the best",
@@ -77,12 +77,12 @@ const poolContent = {
     "I2F": "₹30,000",
     "IDE": "₹30,000",
     "DRC": "₹30,000",
-    "FSV": "₹10,000",
+    "FSV": "₹7,500",
     "CBD": "Goodies",
     "CUR" : "₹19,000",
     "HCKS": "Goodies from Company",
-    "RBS": "₹6,000",
-    "RBW": "Goodies",
+    "RBS": "₹10,000",
+    "FWG": "Goodies from Company",
     "QHCK": "₹1,20,000",
     "CANW": "Special Prizes from Company",
     "CPCT": "Knowledge!",
@@ -106,7 +106,7 @@ const regContent = {
     "CUR": "200",
     "HCKS":  "150",
     "RBS": "200",
-    "RBW":  "500",
+    "FWG":  "700 Per Head",
     "QHCK": "800",
     "CANW":  "2000",
     "CPCT": "Its Free!",
@@ -131,7 +131,7 @@ const venueContent = {
     "CUR": "BBA Quadrangle",
     "HCKS":"CSE Labs",
     "RBS": "Main Stage",
-    "RBW": "ECE Labs",
+    "FWG": "ECE Labs",
     "QHCK": "Library",
     "CANW": "MBA Classroom + Main Ground",
     "CPCT": "Auditorium",
@@ -155,7 +155,7 @@ const sizeContent = {
     "CUR": "Individual (PUC Students Only)",
     "HCKS": "Individual",
     "RBS": "2",
-    "RBW": "4",
+    "FWG": "4",
     "QHCK": "3 - 4",
     "CANW": "2 - 4",
     "CPCT": "All are Welcome!",
@@ -179,7 +179,7 @@ const coodContent = {
     "CUR": "Sneha N- +91 9535041915  (BBA) \n Pranjal - +91 9474176275  (BBA)",
     "HCKS": "Peerzada Anzar- +91 7889731989  (CSE) \n Tanishq- +91 6395662994  (CSE)",
     "RBS": "Adnan Khan- +91 8553849929  (CE) \n Sai Kiran- +91 6360074795  (CE) \n Bhargav Dayal- +91 9742889022 (ECE)",
-    "RBW": "B Rithesh- +91 7760587221 (ECE) \n Avneesh Tamra - +91 9928914425  (AI&ML)",
+    "FWG": "Bhargav Dayal- +91 9742889022 (ECE) \n Avneesh Tamra - +91 9928914425  (AI&ML)",
     "QHCK": "Bharatdeep Hazarika - +91 7086034141  (ECE) \n Abhisek Bedant- +91 9148082154 (EEE) \n Bhargav Dayal- +91 9742889022 (ECE)",
     "CANW": "Ananyaa Sundar- +91 8197404137  (ECE) \n Mahesh - +91 9701848618  (AI&ML)",
     "CPCT": "Sahana- +91 9663964760 (ECE) \n B Rithesh- +91 7760587221 (ECE) ",
@@ -206,7 +206,7 @@ const timingsContent = {
     "CUR": "12:30PM - 2:30PM",
     "HCKS": "3:30PM - 6:30PM",
     "RBS": "3:30PM - 6:30PM",
-    "RBW": "3:30PM - 6:30PM",
+    "FWG": "9:00AM - 6:30PM",
     "QHCK": "9AM Onwards",
     "CANW": "9:30AM - 2:30PM",
     "CPCT": "Afternoon Session",
@@ -231,7 +231,7 @@ const linkContent = {
     "CUR": "https://docs.google.com/document/d/1Teww_Nr8KkagShTJtIfVys4HpPFb6gFWQV6ozHfbugI/edit?usp=sharing",
     "HCKS":  "https://docs.google.com/document/d/1jrdELb7fyFRoP1wh5O7FxvsohxeTql8vpO3uA5vhIkk/edit?usp=sharing",
     "RBS": "https://docs.google.com/document/d/1WI-eySzs4BjxfpOhK2b92bUkFFzVCEL2-lVkE_nz7ac/edit?usp=sharing",
-    "RBW":  "https://docs.google.com/document/d/1zKVj3DsFNo_oFwpmTlM8NaGbjMNKCkeSifdniuKtPFQ/edit?usp=sharing",
+    "FWG":  "https://docs.google.com/document/d/1zKVj3DsFNo_oFwpmTlM8NaGbjMNKCkeSifdniuKtPFQ/edit?usp=sharing",
     "QHCK": "https://docs.google.com/document/d/1zyhg_LI_78JSy3HN1vhrrcDJG0Ga-M-Qmti_OOc-AxU/edit?usp=sharing",
     "CANW":  "https://docs.google.com/document/d/112l0P77QiLS27KnQvftnrUhc7H6EFwtxCp5GxKm9wig/edit?usp=sharing",
     "CPCT": "https://docs.google.com/document/d/1k7oK-t-CoBPrGk0T7dNZGhrRSYWUfJfyqXrBuswo09s/edit?usp=sharing",
@@ -251,7 +251,7 @@ const linkContent = {
 
 const eventNames = [ "CHEMICAL ROCKETRY", "IDEAS2FUND", "IDEASTORM", 
 "DRONE RACE","FAST SERVICE","CHATBOT DEVELOPMENT WORKSHOP","CURIOUS MINDS","HACKER SERIES",
-"ROBO SOCCER","ROBOTICS WORKSHOP","QUANTUM HACK (24-HOUR HACKATHON)","CANSAT WORKSHOP",
+"ROBO FOOTBALL","FIXED WING WORKSHOP","QUANTUM HACK (24-HOUR HACKATHON)","CANSAT WORKSHOP",
 "CHAI PE CHARCHA","BEST MANAGER","WIZARDS OF DALAL STREET","FULL THROTTLE (RC CAR RACE)","ETHICAL HACKING WORKSHOP",
 "ARDUINO WORKSHOP","BATTLE BOTS (ROBO-WARS)","LIFT-OFF (DRONE FLIGHT SIMULATION)",
 "EXHIBITION","DATA SCIENCE WORKSHOP"]
@@ -269,7 +269,7 @@ function Events() {
   
    
     return(
-        <div style={{"color":"white",  "overflow": "hidden" }}>
+        <div id="events" style={{"color":"white",  "overflow": "hidden" }}>
                     <Offcanvas show={show} onHide={handleClose} placement="end" style={{"fontWeight":"700","fontFamily": "'Source Code Pro', monospace","fontSize":"1rem"}} id="offBack">
                         <Offcanvas.Header closeButton>
                         <Offcanvas.Title style={{"fontWeight":"700","fontFamily": "'Source Code Pro', monospace","fontSize":"2rem"}}>{eventNames[isEvent-1]}</Offcanvas.Title>
@@ -310,8 +310,6 @@ function Events() {
                         <Filler time="3:30PM" content={content['HCKS']} eventName="HACKER SERIES" handleClick={handleClick} handleShow={handleShow} eventNum={8} oddEven={1}/>
                         <br></br>
                         <Filler time="3:30PM" content={content['RBS']} eventName="ROBO SOCCER" handleClick={handleClick} handleShow={handleShow} eventNum={9} oddEven={0}/>
-                        <br></br>
-                        <Filler time="3:30PM" content={content['RBW']} eventName="ROBOTICS WORKSHOP" handleClick={handleClick} handleShow={handleShow} eventNum={10} oddEven={1}/>
                         </div>
                     </div>
             </div><br></br><br></br>
@@ -321,25 +319,25 @@ function Events() {
                         FRI, 9th Dec
                         </div>
                         <div className="col col-md-10 col-12">
-                        <Filler time="9:00AM" content={content['QHCK']} eventName="QUANTUM HACK (24-HOUR HACKATHON)"handleClick={handleClick} handleShow={handleShow}  eventNum={11} oddEven={0} />
+                        <Filler time="9:00AM" content={content['QHCK']} eventName="QUANTUM HACK (24-HOUR HACKATHON)"handleClick={handleClick} handleShow={handleShow}  eventNum={11} oddEven={1} />
                         <br></br>
-                        <Filler time="9:30AM" content={content['CANW']} eventName="CANSAT WORKSHOP" handleClick={handleClick} handleShow={handleShow} eventNum={12} oddEven={1} />
+                        <Filler time="9:30AM" content={content['CANW']} eventName="CANSAT WORKSHOP" handleClick={handleClick} handleShow={handleShow} eventNum={12} oddEven={0} />
                         <br></br>
-                        <Filler time="Afternoon" content={content['CPCT']} eventName="CHAI PE CHARCHA" handleClick={handleClick} handleShow={handleShow} eventNum={13} oddEven={0} />
+                        <Filler time="Afternoon" content={content['CPCT']} eventName="CHAI PE CHARCHA" handleClick={handleClick} handleShow={handleShow} eventNum={13} oddEven={1} />
                         <br></br>
-                        <Filler time="10:00AM" content={content['BMM']} eventName="BEST MANAGER"handleClick={handleClick} handleShow={handleShow} eventNum={14} oddEven={1} />
+                        <Filler time="10:00AM" content={content['BMM']} eventName="BEST MANAGER"handleClick={handleClick} handleShow={handleShow} eventNum={14} oddEven={0} />
                         <br></br>
-                        <Filler time="10:30AM" content={content['WZDS']} eventName="WIZARDS OF DALAL STREET"handleClick={handleClick} handleShow={handleShow} eventNum={15} oddEven={0}  />
+                        <Filler time="10:30AM" content={content['WZDS']} eventName="WIZARDS OF DALAL STREET"handleClick={handleClick} handleShow={handleShow} eventNum={15} oddEven={1}  />
                         <br></br>
-                        <Filler time="12:00PM" content={content['ETHW']} eventName="ETHICAL HACKING WORKSHOP"handleClick={handleClick} handleShow={handleShow}  eventNum={17} oddEven={1} />
+                        <Filler time="12:00PM" content={content['ETHW']} eventName="ETHICAL HACKING WORKSHOP"handleClick={handleClick} handleShow={handleShow}  eventNum={17} oddEven={0} />
                         <br></br>
-                        <Filler time="12:30PM" content={content['RCR']} eventName="FULL THROTTLE (RC CAR RACE)" handleClick={handleClick} handleShow={handleShow} eventNum={16}oddEven={0} />
+                        <Filler time="12:30PM" content={content['RCR']} eventName="FULL THROTTLE (RC CAR RACE)" handleClick={handleClick} handleShow={handleShow} eventNum={16}oddEven={1} />
                         <br></br>
-                        <Filler time="12:30PM" content={content['ARDW']} eventName="ARDUINO WORKSHOP"handleClick={handleClick}  handleShow={handleShow} eventNum={18}oddEven={1} />
+                        <Filler time="12:30PM" content={content['ARDW']} eventName="ARDUINO WORKSHOP"handleClick={handleClick}  handleShow={handleShow} eventNum={18}oddEven={0} />
                         <br></br>
-                        <Filler time="2:00PM" content={content['DRFS']} eventName="LIFT-OFF (DRONE FLIGHT SIMULATION)"handleClick={handleClick} handleShow={handleShow}  eventNum={20} oddEven={0}/>
+                        <Filler time="2:00PM" content={content['DRFS']} eventName="LIFT-OFF (DRONE FLIGHT SIMULATION)"handleClick={handleClick} handleShow={handleShow}  eventNum={20} oddEven={1}/>
                         <br></br>
-                        <Filler time="3:30PM" content={content['ROBW']} eventName="BATTLE BOTS (ROBO-WARS)"handleClick={handleClick} handleShow={handleShow}  eventNum={19} oddEven={1}/>
+                        <Filler time="3:30PM" content={content['ROBW']} eventName="BATTLE BOTS (ROBO-WARS)"handleClick={handleClick} handleShow={handleShow}  eventNum={19} oddEven={0}/>
                         <br></br>
                         </div>
                     </div>
@@ -350,7 +348,9 @@ function Events() {
                         SAT, 10th Dec
                         </div>
                         <div className="col col-md-10 col-12">
-                        <Filler time="9:00AM" content={content['EXH']} eventName="EXHIBITION"handleClick={handleClick} handleShow={handleShow} eventNum={21} oddEven={0}/>
+                        <Filler time="9:00AM" content={content['EXH']} eventName="EXHIBITION"handleClick={handleClick} handleShow={handleShow} eventNum={21} oddEven={1}/>
+                        <br></br>
+                        <Filler time="9:00AM" content={content['FWG']} eventName="FIXED WING WORKSHOP" handleClick={handleClick} handleShow={handleShow} eventNum={10} oddEven={0}/>
                         <br></br>
                         <Filler time="9:00AM" content={content['DSW']} eventName="DATA SCIENCE WORKSHOP"handleClick={handleClick} handleShow={handleShow} eventNum={22}  oddEven={1}/>
                         <br></br>                    

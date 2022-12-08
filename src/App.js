@@ -5,11 +5,11 @@ import Timer from './Components/Timer'
 import Team from './Components/Team'
 import Sponsors from './Components/Sponsors'
 import Faq from './Components/Faq'
+import Gallery from './Components/Gallery'
 import './App.css';
-  
+import {useRef} from 'react';
 
 function App() {
-
 
   return (
     <div className="App">
@@ -17,25 +17,15 @@ function App() {
         <br></br>
         <About /><br></br>
         <Timer/><br></br>
-        <Events/><br></br>
+        <Events id="eventBar"/><br></br>
         <Team /><br></br>
-        <Sponsors id="sponsors" /><br></br>
+        <Sponsors id="sponsors" /><br></br><br></br><br></br>
+        <Gallery /><br></br>
         <Faq/><br></br>
-        {/* <MainView id="MainView"/> */}
+
     </div>
   );
 }
 
-// const MainView = () => {
-//   return (
-//     <div>
-//         <About /><br></br>
-//         <Timer/><br></br>
-//         <Events/><br></br>
-//         <Team /><br></br>
-//         <Sponsors id="sponsors" /><br></br>
-//         <Faq/><br></br>
-//     </div>
-//   );
-// }
+
 export default App;

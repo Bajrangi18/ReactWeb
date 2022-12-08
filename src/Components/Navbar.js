@@ -15,28 +15,52 @@ const Navbar = () => {
                 
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-1">
                         <li className="nav-item" >
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>HOME</button>                        </li>
+                            <a href="#home">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>HOME</button>
+                            </a>
+                        </li>
                         <li className="nav-item">
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>EVENTS</button>                        </li>
+                            <a href="#events">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>EVENTS</button>
+                            </a>
+                        </li>
                         <li className="nav-item">
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>ABOUT</button>                        </li>
+                            <a href="#about">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>ABOUT</button>
+                            </a>
+                        </li>
                         <li className="nav-item">
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>CONTACT US</button>                        </li>
+                            <a href="#contact">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>CONTACT US</button>  
+                            </a>
+                        </li>
                         
                 </ul>
                 </div>
-                    <img src={logo} height={60} className="mx-auto" style={{"paddingRight": "1%", "filter": "drop-shadow(0 0 0.05rem white)"}}/>
+                    <a href="/">
+                     <img src={logo} height={60} className="mx-auto" style={{"paddingRight": "1%", "filter": "drop-shadow(0 0 0.05rem white)"}}/>
+                    </a>
+                    
                     
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-1">
                         <li className="nav-item" >
-                        <button type="button" className="btn btn-link"  style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>SPONSORS</button>                        </li>
+                            <a href="#sponsors">
+                            <button type="button" className="btn btn-link"  style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>SPONSORS</button>
+                            </a>
+                        </li>
                         <li className="nav-item">
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>FAQ</button>                        </li>
+                            <a href="#faq">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>FAQ</button>
+                            </a>
+                        </li>
                         <li className="nav-item">
                         <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>GALLERY</button>                        </li>
                         <li className="nav-item">
-                        <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>BOOKING</button>                        </li>
+                            <a href="#book">
+                            <button type="button" className="btn btn-link" style={{"filter": "drop-shadow(0 0 0.3rem white)","textDecoration":"none","color":"white","fontFamily": "'Source Code Pro', monospace","fontSize": "1.3rem"}}>BOOKING</button>
+                            </a>
+                        </li>
                         
                 </ul>
                 </div>
@@ -46,4 +70,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default Navbar;  

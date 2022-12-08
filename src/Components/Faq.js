@@ -1,6 +1,6 @@
 const Faq = () => {
     return (
-        <div style={{"color":"white"}}><br></br><br></br>
+        <div id="faq" style={{"color":"white"}}><br></br><br></br>
         <h1 style={{"fontWeight":"700","fontFamily": "'Source Code Pro', monospace"}}>FAQs</h1><br></br>
             <div className="container text-center" style={{"width":"70%"}}>
             <div className="row gy-3">

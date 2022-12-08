@@ -14,9 +14,13 @@ import vijay from './Helpers/vijay.jpg'
 import sneha from './Helpers/sneha.jpg'
 import nidhi from './Helpers/nidhi.jpg'
 import peer from './Helpers/peer.jpg'
+import rishi from './Helpers/rishi.jpeg'
+import tanishq from './Helpers/tan.jpg'
+import mahesh from './Helpers/mahesh.jpeg'
+import kb from './Helpers/kb.jpeg'
 const Team = () => {
     return (
-        <div  ><br></br><br></br>
+        <div id='contact'><br></br><br></br>
             <h1 style={{"fontWeight":"700","fontFamily": "'Source Code Pro', monospace","color":"white"}}>MEET OUR TEAM</h1><br></br>
             <div className="container text-center" style={{"fontWeight":"500","fontFamily": "'Source Code Pro', monospace"}}>
                 <div className="row gx-5 gy-5">
@@ -107,10 +111,10 @@ const Team = () => {
                     </div>
                     <div className="col-xs-6 col-sm-6 col-md-3">
                     <div className="card-transparent text-white">
-                        <img src={ravy} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
+                        <img src={kb} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
                         <div className="card-body"> <br></br>
-                            <h3 className="card-title">PRIYANSHU<br></br> ROY</h3>
-                            <p className="card-text">DESIGN LEAD</p>
+                            <h3 className="card-title">KB<br></br>Sumanth</h3>
+                            <p className="card-text">WORKSHOP LEAD</p>
                         </div>
                     </div>
                     </div>
@@ -130,6 +134,44 @@ const Team = () => {
                         <div className="card-body"> <br></br>
                             <h3 className="card-title">AVNEESH <br></br>TAMRA</h3>
                             <p className="card-text">COORDINATOR LEAD</p>
+                        </div>
+                    </div>
+                    </div>
+                </div><br></br>
+                <div className="row gx-5 gy-5">
+                <div className="col-xs-6 col-sm-6 col-md-3">
+                    <div className="card-transparent text-white">
+                        <img src={ravy} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
+                        <div className="card-body"> <br></br>
+                            <h3 className="card-title">PRIYANSHU<br></br> ROY</h3>
+                            <p className="card-text">DESIGN LEAD</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="col-xs-6 col-sm-6 col-md-3">
+                    <div className="card-transparent text-white">
+                        <img src={mahesh} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
+                        <div className="card-body"> <br></br>
+                            <h3 className="card-title">Mahesh<br></br>B</h3>
+                            <p className="card-text">COORDINATOR CO-LEAD</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="col-xs-6 col-sm-6 col-md-3">
+                    <div className="card-transparent text-white">
+                        <img src={rishi} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
+                        <div className="card-body"> <br></br>
+                            <h3 className="card-title">Rishi<br></br>Murali</h3>
+                            <p className="card-text">MARKETING CO-LEAD</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="col-xs-6 col-sm-6 col-md-3">
+                    <div className="card-transparent text-white">
+                        <img src={tanishq} className="card-img-top" alt="..." style={{"borderRadius":"50%"}}  /><br></br>
+                        <div className="card-body"> <br></br>
+                            <h3 className="card-title">Tanishq<br></br>Kushwaha</h3>
+                            <p className="card-text">MARKETING CO-LEAD</p>
                         </div>
                     </div>
                     </div>
@@ -172,7 +214,8 @@ const Team = () => {
                         </div>
                     </div>
                     </div>
-                </div>
+                </div><br></br>
+
                 </div>
         </div>
     );
