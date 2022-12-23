@@ -166,7 +166,7 @@ function About() {
                 <option value="DRC">DRONE RACE</option>
                 <option value="FSV">FAST SERVICE</option>
                 <option value="CBD">CHATBOT DEVELOPMENT WORKSHOP</option>
-               {/*  <option value="HCKS">HACKER SERIES</option> */}
+                <option value="HCKS">HACKER SERIES</option>
                 <option value="RBS">ROBO SOCCER</option>
                 <option value="RBW">ROBOTICS WORKSHOP</option>
                 <option value="QHCK">QUANTUM HACKS</option>
@@ -174,15 +174,15 @@ function About() {
                 <option value="BMM">BEST MANAGER</option>
                 <option value="WZDS">WIZARDS OF DALAL STREET</option>
                 <option value="RCR">FULL THROTTLE</option>
-                {/* <option value="ETHW">ETHICAL HACKING WORKSHOP</option> */}
+                <option value="ETHW">ETHICAL HACKING WORKSHOP</option>
                 <option value="ARDW">ARDUINO WORKSHOP</option>
                 <option value="CURM">CURIOUS MINDS</option>
                 <option value="ROBW">BATTLE BOTS</option>
                 <option value="DRFS">LIFT-OFF</option>
-                {/* <option value="DATA">DATA SCIENCE</option> */}
+                <option value="DATA">DATA SCIENCE</option>
                 <option value="FWG">FIXED WING RC</option>
                 <option value="EXHB">EXHIBITION</option>
-             {/*   <option value="WEB">WEB DEVELOPMENT</option> */}
+               <option value="WEB">WEB DEVELOPMENT</option>
               </Form.Select><br></br>
               <div className="input-group mb-3">
                   <input onChange={(event)=> {
@@ -230,7 +230,7 @@ management - this is your chance to showcase your mettle, distinctive ideas and
 knack for technology to the world!`}
                      </p><br></br>
                      <div id="book">
-                     <button type="button" className="btn btn-light btn-lg" onClick={handleShow} id="bookPass"
+                     <button type="button" className="btn btn-light btn-lg" onClick={handleShow} disabled id="bookPass"
                      style={{"margin":"10%","width":"80%","height":"20%","fontFamily": "'Source Code Pro', monospace","fontSize": "2.2rem","fontWeight":"700","filter": "drop-shadow(0 0 0.3rem white)"}}>BOOK PASSES NOW!</button>
                      </div>
                     </div>

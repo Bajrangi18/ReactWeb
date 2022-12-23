@@ -277,7 +277,7 @@ function Events() {
                         <Offcanvas.Body>
                         <img src={Object.values(urlContent)[isEvent-1]} height={260} style={{"borderRadius":"20px","filter": "drop-shadow(0 0 0.6rem black)"}}/><br></br><br></br>
                          {/* <h5>{Object.values(content)[isEvent-1]}</h5><br></br> */}
-                         <h2 style={{"fontWeight":"700","filter": "drop-shadow(0 0 0.05rem black)"}}>Pool Prize Money: {Object.values(poolContent)[isEvent-1]}</h2>
+                         {/* <h2 style={{"fontWeight":"700","filter": "drop-shadow(0 0 0.05rem black)"}}>Pool Prize Money: {Object.values(poolContent)[isEvent-1]}</h2> */}
                          <h4 style={{"fontWeight":"700"}}>Registration Fee {Object.values(regContent)[isEvent-1]} </h4>
                          <h4 style={{"fontWeight":"700"}}>Team Size: {Object.values(sizeContent)[isEvent-1]}</h4>
                          <h4 style={{"fontWeight":"700"}}>Venue: {Object.values(venueContent)[isEvent-1]}</h4>
